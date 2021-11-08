@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CSS and Scripts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <style>
+      :root {
+      --bs-light: green;
+      }
+      * {
+        font-family: 'Poppins', sans-serif;
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+
+      .navbar-brand {
+        letter-spacing: 5px;
+      }
+      .nav-item {
+        letter-spacing: 1px;
+      }
+      #landing {
+        height: 65vh;
+      }
+      nav {
+        margin-bottom: 30px;
+      }
+      .head1 {
+        letter-spacing: 5px;
+        margin-top: 7%;
+        margin-bottom: 2%;
+      }
+      p {
+        line-height: 2;
+        
+      }
+      #navigations-leiste {
+        padding: 0% 5.7%;
+      }
+
+     
+    </style>
+    <title>ALPINA CULINAE</title>
+  </head>
+  <body>
+    <img src="AC_Head.png" alt="" width="100%">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light mr-auto">
+      <div class="container-fluid" id="navigations-leiste">
+        <a class="navbar-brand" href="#">
+          ALPINA CULINAE
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#event">Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ueberuns">Über Uns</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reservation">Reservierung</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <img src="landing.png" alt="" id="landing">
+    <main class="container-fluid">
+
+    <!-- Page Contents Event -->
+    <div class="container-sm">
+    <h1 class="head1" id="event">ALPINA CULINAE—EVENT</h1>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </div>
+
+    <!-- Page Contents Ueber Uns -->
+    <div class="container-sm">
+    <h1 class="head1" id="ueberuns">ÜBER UNS</h1>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
+    
+    <!-- Form Area -->
+    <div class="container-sm">
+    <h1 class="head1" id="reservation">RESERVIERUNG</h1>
+    <form class="row g-3 needs-validation container-sm" id="form" novalidate>
+      <div class="col-md-4">
+        <label for="vn" class="form-label">Vorname</label>
+        <input type="text" class="form-control" id="vn" placeholder="Vorname…" required>
+        
+        <div class="invalid-feedback">
+          Bitte Vornamen eintragen!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="nn" class="form-label">Nachname</label>
+        <input type="text" class="form-control" id="nn" placeholder="Nachname…" required>
+        <div class="invalid-feedback">
+          Bitte Nachnamen eintragen!
+        </div>
+      </div>
+
+      
+      <div class="col-md-3">
+        <label for="menue" class="form-label">Menüauswahl</label>
+        <select class="form-select" id="menue" required>
+          <option selected disabled value="">Auswählen...</option>
+          <option>Menü1</option>
+          <option>Menü2</option>
+          <option>Menü3</option>
+        </select>
+        <div class="invalid-feedback">
+          Bitte ein Menü auswählen.
+        </div>
+      </div>
+     
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Digitalen Datenverarbeitung zustimmen.
+          </label>
+          <div class="invalid-feedback">
+            Sie müssen der digitalen Datenverarbeitungen zustimmen.
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
+  </div>
+</main>
+<script>
+            (function () {
+ 'use strict';
+  window.addEventListener('load', function() {
+    var forms = document.getElementsByClassName('needs-validation');
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        else{
+          event.preventDefault();
+            var wer = $("#vn").val();
+            var wer1 = $("#nn").val();
+            var wer2 = $("#menue").val();
+            var ges = wer+" "+wer1+"<br>"+wer2;
+            alert("Vielen Dank, wir haben ihre Reservierung entgegengenommen!");
+                    Email.send({
+SecureToken:"2db63d0e-7ebf-4107-a310-17b46963e0ea",
+To : 'ellmsimo@multiaugustinum.com',
+From : "ellmsimo@multiaugustinum.com",
+Subject : "formular",
+Body : ges});
+      }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+  </body>
+</html>
