@@ -16,12 +16,8 @@
     <link href="bootstrap.min.css" rel="stylesheet">
     <script src="bootstrap.bundle.min.js"></script>
     <style>
-      :root {
-      --bs-light: green;
-      }
       * {
         font-family: 'Poppins', sans-serif;
-        overflow-x: hidden;
       }
       .navbar-brand {
         letter-spacing: 5px;
@@ -32,8 +28,16 @@
       #landing {
         height: 65vh;
       }
+      #landing-div {
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+      }
       nav {
         margin-bottom: 30px;
+      }
+      form {
+        margin-bottom: 60px;
       }
       .head1 {
         letter-spacing: 5px;
@@ -78,7 +82,9 @@
         </div>
       </div>
     </nav>
+    <a href="#reservation" id="landing-div">
     <img src="landing.png" alt="" id="landing">
+    </a>
     <main class="container-fluid">
 
     <!-- Page Contents Event -->
@@ -114,8 +120,16 @@
         </div>
       </div>
 
+      <div class="col-md-4">
+        <label for="mail" class="form-label">Email Adresse</label>
+        <input type="email" class="form-control" id="mail" placeholder="name@example.com" required>
+        <div class="invalid-feedback">
+          Bitte korrekte Email eintragen!
+        </div>
+      </div>
+
       
-      <div class="col-md-3">
+      <div class="col-md-12">
         <label for="menue" class="form-label">Menüauswahl</label>
         <select class="form-select" id="menue" required>
           <option selected disabled value="">Auswählen...</option>
@@ -127,12 +141,13 @@
           Bitte ein Menü auswählen.
         </div>
       </div>
+      
      
       <div class="col-12">
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
           <label class="form-check-label" for="invalidCheck">
-            Digitalen Datenverarbeitung zustimmen.
+            Der digitalen Datenverarbeitung zustimmen.
           </label>
           <div class="invalid-feedback">
             Sie müssen der digitalen Datenverarbeitungen zustimmen.
@@ -140,10 +155,17 @@
         </div>
       </div>
       <div class="col-12">
-        <button class="btn btn-primary" type="submit">Submit form</button>
+        <button class="btn btn-primary bg-danger" type="submit">Reservierung bestätigen!</button>
       </div>
     </form>
   </div>
+  <table class="table table-hover">
+    <tr>
+      <td>
+        Diplom
+      </td>
+    </tr>
+  </table>
 </main>
 <script>
             (function () {
@@ -158,11 +180,12 @@
         }
         else{
           event.preventDefault();
-            var wer = $("#vn").val();
-            var wer1 = $("#nn").val();
-            var wer2 = $("#menue").val();
-            var ges = wer+" "+wer1+"<br>"+wer2;
-            alert("Vielen Dank, wir haben ihre Reservierung entgegengenommen!");
+            var vorn = $("#vn").val();
+            var nachn = $("#nn").val();
+            var menue = $("#menue").val();
+            var mail = $("#mail").val();
+            var ges ="RESERVIERUNG: <br>"+"Vorname: "+vorn+" "+"Nachname: "+nachn+"<br>"+"eMail: "+mail+"<br>"+"Menü: "+menue;
+            alert("Vielen Dank! Bitte dieses Fenster schließen um Ihre Reservierung abzuschließen!");
                     Email.send({
 SecureToken:"2db63d0e-7ebf-4107-a310-17b46963e0ea",
 To : 'ellmsimo@multiaugustinum.com',
