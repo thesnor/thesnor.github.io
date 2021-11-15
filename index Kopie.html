@@ -76,6 +76,9 @@
               <a class="nav-link" href="#ueberuns">Über Uns</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#menue-ausw">Menü</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#reservation">Reservierung</a>
             </li>
           </ul>
@@ -90,16 +93,50 @@
     <!-- Page Contents Event -->
     <div class="container-sm">
     <h1 class="head1" id="event">ALPINA CULINAE—EVENT</h1>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-      <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+    <p>Herzlich Willkommen zur Alpina Culinae.<br>
+      Am 3.12.2021, 17:00 wollen wir, Patrick Maurer und Paul Scheichl die kulinarische Vielfalt der Region Österreich näherbringen. Überzeugen Sie sich von der Qualität der heimischen Produkte und unserem gastronomischen Können.
+      Durch die grandiose Zusammenarbeit mit unseren Kleinbauern, Fischer, Käser, Metzger, Weinbauern, Almsenner, Bäcker und Obst und Gemüsebauern ist das nicht all zu schwer.
+      Überzeugen Sie sich selbst und besuchen Sie uns im Lokal „Salzburger“ in Flachau, wo wir unsere Version eines Alpinregionalen Menüs präsentieren. 
+      Wir freuen uns, mit Ihnen gemeinsam einen entspannten Abend zu verbringen.
+      </p>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
     </div>
 
     <!-- Page Contents Ueber Uns -->
     <div class="container-sm">
     <h1 class="head1" id="ueberuns">ÜBER UNS</h1>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-    </div>
+    <p>Wir, Patrick Maurer und Paul Scheichl, besuchen derzeit den 5. Jahrgang der Höheren Lehranstalt für Tourismus in Bad Hofgastein. Unsere praktischen Prüfungen haben wir 2020/2021 abgeschlossen gemeinsam mit dem Käsekennerdiplom, dem Jungbarkeeper und der Jungsommelier–Ausbildung. Unsere Praktika haben wir unter anderem im Stanglwirt sowie im Restaurant Mangold absolviert.  Besonderes Interesse haben wir für die regionalen Produkte und deren Verwendung in den Gastroküchen in ganz Österreich. Unsere Freude an der Gastronomie möchten wir nach Abschluss der Ausbildung im Juni 2022 in renommierten Unternehmen ausleben.</p>>    </div>
     
+    <!-- Menue Auswahl-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="alpina culinaem1.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Menü 1</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="alpina culinaem2.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Menü 2</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
     <!-- Form Area -->
     <div class="container-sm">
     <h1 class="head1" id="reservation">RESERVIERUNG</h1>
@@ -133,9 +170,8 @@
         <label for="menue" class="form-label">Menüauswahl</label>
         <select class="form-select" id="menue" required>
           <option selected disabled value="">Auswählen...</option>
-          <option>Menü1</option>
-          <option>Menü2</option>
-          <option>Menü3</option>
+          <option>Menü I:</option>
+          <option>Menü II:</option>
         </select>
         <div class="invalid-feedback">
           Bitte ein Menü auswählen.
@@ -162,7 +198,7 @@
   <table class="table table-hover">
     <tr>
       <td>
-        Diplom
+        Diplomprojekt von Patrick Maurer und Paul Scheichl.
       </td>
     </tr>
   </table>
@@ -184,13 +220,14 @@
             var nachn = $("#nn").val();
             var menue = $("#menue").val();
             var mail = $("#mail").val();
-            var ges ="RESERVIERUNG: <br>"+"Vorname: "+vorn+" "+"Nachname: "+nachn+"<br>"+"eMail: "+mail+"<br>"+"Menü: "+menue;
+            var ges ="RESERVIERUNG: <br>"+"Vorname: "+vorn+" "+"<br>"+"Nachname: "+nachn+"<br>"+"eMail: "+mail+"<br>"+"Menü: "+menue;
+            var email ="ellmsimo@multiaugustinum.com, "+mail;
             alert("Vielen Dank! Bitte dieses Fenster schließen um Ihre Reservierung abzuschließen!");
                     Email.send({
 SecureToken:"2db63d0e-7ebf-4107-a310-17b46963e0ea",
-To : 'ellmsimo@multiaugustinum.com',
+To : email,
 From : "ellmsimo@multiaugustinum.com",
-Subject : "formular",
+Subject : "Bestätigung Reservierung",
 Body : ges});
       }
         form.classList.add('was-validated');
