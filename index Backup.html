@@ -97,7 +97,7 @@
         </div>
       </div>
     </nav>
-    <a href="#menue-ausw" id="landing-div">
+    <a href="#reservation" id="landing-div">
     <img src="landing.png" alt="" id="landing">
     </a>
     <main class="container-fluid">
@@ -106,12 +106,12 @@
     <div class="container-sm">
     <h1 class="head1" id="event">ALPINA CULINAE—EVENT</h1>
     <p>Herzlich Willkommen zur Alpina Culinae.<br>
-      Am <span>19. Feb. 2022, 17:30</span> wollen wir, Patrick Maurer und Paul Scheichl die kulinarische Vielfalt der Region Österreich näherbringen. Überzeugen Sie sich von der Qualität der heimischen Produkte und unserem gastronomischen Können.
+      Am <span>3.12.2021, 17:00</span> wollen wir, Patrick Maurer und Paul Scheichl die kulinarische Vielfalt der Region Österreich näherbringen. Überzeugen Sie sich von der Qualität der heimischen Produkte und unserem gastronomischen Können.
       Durch die grandiose Zusammenarbeit mit unseren Kleinbauern, Fischern, Käsern, Metzgern, Weinbauern, Almsennern, Bäckern und Obst- und Gemüsebauern ist das nicht all zu schwer.
-      Überzeugen Sie sich selbst und besuchen Sie uns im <span>Hotel—Restaurant »Lebzelter« in Altenmarkt</span>, wo wir unsere Version eines Alpinregionalen Menüs präsentieren. 
+      Überzeugen Sie sich selbst und besuchen Sie uns im <span>Lokal „Salzburger“ in Flachau</span>, wo wir unsere Version eines Alpinregionalen Menüs präsentieren. 
       Wir freuen uns, mit Ihnen gemeinsam einen entspannten Abend zu verbringen.
       </p>
-      
+      <p><span>Es gilt die 2G-Regel!</span></p>
     <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
     </div>
 
@@ -120,29 +120,39 @@
     <h1 class="head1" id="ueberuns">ÜBER UNS</h1>
     <p>Wir, Patrick Maurer und Paul Scheichl, besuchen derzeit den 5. Jahrgang der Höheren Lehranstalt für Tourismus in Bad Hofgastein. Unsere praktischen Prüfungen haben wir 2020/2021 abgeschlossen gemeinsam mit dem Käsekennerdiplom, dem Jungbarkeeper und der Jungsommelier–Ausbildung. Unsere Praktika haben wir unter anderem im Stanglwirt sowie im Restaurant Mangold absolviert.  Besonderes Interesse haben wir für die regionalen Produkte, sowie deren Verwendung in den österreichischen Gourmetküchen. Unsere Freude an der Gastronomie möchten wir nach Abschluss der Ausbildung im Juni 2022 in renommierten Unternehmen ausleben.</p>   </div>
     
-    <!-- Page Contents MenÜ -->
-    <div class="container-sm">
-      <h1 class="head1" id="menue-ausw">DAS MENÜ</h1>
-      <p>RIND – BROT – EI <br>
-        *****<br>
-        BROCCOLI – SPECK<br>
-        *****<br>
-        RAVIOLI – RADICCIO<br>
-        *****<br>
-        ZITRONE – VODKA – KAVIER<br>
-        *****<br>
-        CHICKEN – SÜSSKARTOFFEL<br>
-        *****<br>
-        KAFFEE – MASCARPONE<br>
-        *****<br>
-        KÄSE<br>
-        </p>
+    <!-- Menue Auswahl-->
+    <div id="menue-ausw" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#menue-ausw" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#menue-ausw" data-bs-slide-to="1" aria-label="Slide 2"></button>
       </div>
-      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="alpina culinaem1.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Menü 1</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="alpina culinaem2.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Menü 2</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#menue-ausw" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#menue-ausw" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <!-- Form Area -->
     <div class="container-sm">
-    <h1 class="head1" id="reservation">REGISTRIERUNG</h1>
+    <h1 class="head1" id="reservation">RESERVIERUNG</h1>
     <form class="row g-3 needs-validation container-sm" id="form" novalidate>
       <div class="col-md-4">
         <label for="vn" class="form-label">Vorname</label>
@@ -168,7 +178,7 @@
         </div>
       </div>
 
-      <!-- 
+      
       <div class="col-md-12">
         <label for="menue" class="form-label">Menüauswahl</label>
         <select class="form-select" id="menue" required>
@@ -179,7 +189,7 @@
         <div class="invalid-feedback">
           Bitte ein Menü auswählen.
         </div>
-      </div>-->
+      </div>
       
      
       <div class="col-12">
